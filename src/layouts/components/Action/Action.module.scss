@@ -1,0 +1,23 @@
+.wrapper {
+    position: relative;
+    height: var(--search-height);
+    padding-left: 16px;
+    display: flex;
+    border: 1.5px solid transparent;
+}
+.profile-btn,
+.search-btn,
+.cart-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--search-button-width);
+    height: 100%;
+    font-size: 1.8rem;
+    color: rgba(22, 24, 35, 0.34);
+    background-color: white;
+    &:hover {
+        cursor: pointer;
+        color: black;
+    }
+}

@@ -1,15 +1,16 @@
 //Layout
-import { HeaderOnly } from '~/components/Layouts';
+import { HeaderOnly } from '~/layouts';
 
-import About from '~/pages/About/About';
+import Product from '~/pages/Product/Product';
 import Home from '~/pages/Home/Home';
-import Login from '~/pages/Login/Login';
+import About from '~/pages/About/About';
+import config from '~/configs';
 
 //Public routes without login
 const publicRoutes = [
-    { path: '/', component: Home },
-    { path: '/about', component: About },
-    { path: '/login', component: Login, layout: HeaderOnly },
+    { path: config.routes.home, component: Home },
+    { path: config.routes.product, component: Product },
+    { path: config.routes.about, component: About }, //, layout: HeaderOnly },
 ];
 //Routes required login
 const privateRoutes = [];
