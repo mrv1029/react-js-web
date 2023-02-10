@@ -1,0 +1,12 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+.carousel-item-div {
+    // object-fit: cover;
+    // background: url('/assets/images/slide-show/987730.jpg');
+    width: 100vw !important;
+    height: 50vh !important;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    // width: 100% !important;
+    // height: 100% !important;
+}
