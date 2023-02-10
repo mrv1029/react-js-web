@@ -20,7 +20,13 @@ function Header({ children }) {
         <header className={cx('wrapper')}>
             <div className={cx('inner')}>
                 <div className="logo">
-                    <Link to={config.routes.home} className={cx('logo-link')}>
+                    <Link
+                        to={config.routes.home}
+                        className={cx('logo-link')}
+                        onClick={() => {
+                            setsearchClick(false);
+                        }}
+                    >
                         <img src={images.logo} alt="test" />
                     </Link>
                 </div>
