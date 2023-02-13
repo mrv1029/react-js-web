@@ -1,20 +1,24 @@
 import className from 'classnames/bind';
-import styles from './Menu.module.scss';
+import React from 'react';
 import { Link } from 'react-router-dom';
-import Home from '~/pages/Home/Home';
+import Tippy from '@tippyjs/react/headless';
+
+import styles from './Menu.module.scss';
+import { publicRoutes } from '~/routes';
 import config from '~/configs';
 
 const cx = className.bind(styles);
 
 function Menu() {
     return (
-        <div>
+        <div className="nav-menu">
             <ul className={cx('nav')}>
-                {Object.keys(config.routes).map((key, index) => {
+                {config.menu.map((item) => {
+                    const route = config.routes[item];
                     return (
-                        <li className={cx('nav-item')} key={index}>
-                            <Link to={config.routes[key]} className={cx('menu-link')} key={index}>
-                                {key}
+                        <li className={cx('nav-item')} key={item}>
+                            <Link to={route} className={cx('menu-link')} key={item}>
+                                {item}
                             </Link>
                         </li>
                     );
