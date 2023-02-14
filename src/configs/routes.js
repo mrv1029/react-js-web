@@ -4,6 +4,7 @@ const routes = {
     about: '/about',
     login: '/login',
     search: '/search',
+    detail: '/detail',
 };
 
 export default routes;

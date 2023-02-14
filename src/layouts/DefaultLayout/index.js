@@ -13,9 +13,7 @@ function DefaultLayout({ children }) {
             <div className={cx('slide-show')}>
                 <SlideShow />
             </div>
-            <div className={cx('container')}>
-                <div>{children}</div>
-            </div>
+            <div className={cx('container')}>{children}</div>
         </div>
     );
 }
