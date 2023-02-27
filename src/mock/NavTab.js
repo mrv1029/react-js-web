@@ -1,14 +1,14 @@
 export const navTab = [
     {
-        Key: 'Hotdeals',
-        Value: 'Bán chạy nhất',
+        Key: 'Hot',
+        Value: 'Hot',
     },
     {
         Key: 'Sports',
-        Value: 'Đồ thể thao',
+        Value: 'Sports',
     },
     {
         Key: 'Normal',
-        Value: 'Mặc hàng ngày',
+        Value: 'Normal',
     },
 ];

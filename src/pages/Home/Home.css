@@ -1,0 +1,49 @@
+.nav-link:before,
+.nav-link:after {
+    content: '';
+    display: inline-block;
+}
+
+.nav-link {
+    color: #d9d9dd !important;
+    border: 0 !important;
+}
+
+.nav-tabs .nav-link {
+    position: relative !important;
+    padding-bottom: 15px !important;
+    color: #8e8e8e !important;
+}
+
+.nav-link.active {
+    color: #231f20 !important;
+}
+
+.nav-link:after,
+.nav-link:before {
+    content: '';
+    position: absolute !important;
+    bottom: 0 !important;
+    height: 2px !important;
+    transition: all 0.3s !important;
+}
+
+.nav-link:before {
+    left: 0 !important;
+    width: 100% !important;
+    background-color: #d9d9dd !important;
+}
+
+.nav-link:after {
+    right: 0 !important;
+    left: auto !important;
+    width: 0 !important;
+    background-color: #000 !important;
+}
+
+.nav-link.active:after {
+    left: 0 !important;
+    right: auto !important;
+    width: 100% !important;
+    transition: all ease-in-out 0.2s !important;
+}
